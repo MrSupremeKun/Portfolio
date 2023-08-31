@@ -1,0 +1,282 @@
+//intro settings
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  &__bg {
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    transition: 0.2s;
+
+    &:hover {
+      filter: drop-shadow(10px 10px 15px black);
+    }
+  }
+
+  &__textarea {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 50px;
+
+    span {
+      color: rgb(103, 91, 91);
+    }
+  }
+
+  &__images {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &__icon,
+    &__icon1 {
+      font-size: 75px;
+      color: black;
+    }
+
+    &__icon {
+      animation: movingIcon1 2.5s ease-in-out infinite;
+    }
+    &__icon1 {
+      animation: movingIcon2 2.5s ease-in-out infinite;
+    }
+  }
+}
+//
+
+//header seettings
+.header {
+  img {
+    height: 600px;
+    width: 550px;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateX(-40px);
+      border-radius: 20% 35%;
+    }
+  }
+
+  &__section {
+    flex-wrap: wrap;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    &__textarea {
+      width: 400px;
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      border: 1px solid black;
+      border-radius: 25px;
+      padding: 15px;
+      gap: 2rem;
+
+      &:hover {
+        transform: translateX(-20px);
+        transition: 0.3s;
+      }
+
+      h2 {
+        font-size: 40px;
+      }
+
+      p {
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid black;
+        font-size: 20px;
+        margin-bottom: 30px;
+
+        &:hover {
+          background-color: grey;
+          color: white;
+          transition: 0.3s;
+          border: 1px solid white;
+
+          span {
+            color: red;
+            transition: 0.3s;
+          }
+        }
+
+        span {
+          color: white;
+        }
+      }
+
+      &__link {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        font-size: 30px;
+        color: black;
+
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+//
+
+//keyframes
+@keyframes movingIcon1 {
+  10% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes movingIcon2 {
+  10% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+//
+
+//projects settings
+.projects {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 800px;
+    overflow: hidden;
+
+    &__box {
+      border: 1px solid black;
+      border-radius: 20px;
+      transition: 0.5s ease-in-out;
+      overflow: hidden;
+      height: 530px;
+      flex: 1;
+      position: relative;
+
+      &_link {
+        color: black;
+      }
+
+      &:hover {
+        flex-grow: 5;
+
+        article {
+          opacity: 1;
+          transform: scale(1);
+          transition: 0.3s;
+          transition-delay: 0.3s;
+        }
+      }
+
+      article {
+        opacity: 0;
+        transform: scale(0);
+        position: absolute;
+        top: 50px;
+        font-size: 40px;
+
+        left: 5%;
+        color: black;
+      }
+    }
+  }
+}
+//
+//media settings
+.media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+  &__block {
+    display: flex;
+    gap: 200px;
+
+    &__box {
+      border: 1px solid black;
+      border-radius: 20px;
+      padding: 20px;
+      transition: .3s ease-in-out;
+
+      article{
+        text-align: center;
+      }
+
+      &:nth-child(1):hover {
+        background-color: #f63;
+        transition: .3s ease-in-out;
+        transform: translateY(-30px);
+
+        svg {
+          color: red;
+          transition: 0.3s;
+        }
+
+        article{
+          color: white;
+        }
+
+      }
+      &:nth-child(2):hover {
+        transform: translateY(-30px);
+        background-color: green;
+        transition: .3s ease-in-out;
+
+        svg {
+          color: blue;
+          transition: 0.3s;
+        }
+
+        article{
+          color: white;
+        }
+
+      }
+    }
+
+    svg {
+      font-size: 10rem;
+    }
+  }
+}
+//

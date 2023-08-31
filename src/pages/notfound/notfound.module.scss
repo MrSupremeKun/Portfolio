@@ -1,0 +1,19 @@
+.notFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 15rem;
+  }
+
+  &__textarea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 4rem;
+    gap: 1.5rem;
+  }
+}

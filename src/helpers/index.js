@@ -1,0 +1,22 @@
+export const NavbarData = [
+    {
+        path:"/",
+        name:'Home'
+    },
+    {
+        path:"/",
+        name:'About'
+    },
+    {
+        path:"/",
+        name:'Service'
+    },
+    {
+        path:"/",
+        name:'Portfolio'
+    },
+    {
+        path:"/",
+        name:'Blog'
+    },
+]

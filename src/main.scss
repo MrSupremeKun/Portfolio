@@ -1,0 +1,124 @@
+//Google fonts "Comforta"
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+//
+
+//main setttings
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+//
+
+//body settings
+body {
+  font-family: "Comfortaa", sans-serif;
+  background-color: #f9d1d1;
+}
+
+//code to scroll fully one page like a parralax effect
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+//section settings mini animation
+section {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+//
+
+//button that i use everywhere like a 'component'
+.button {
+  width: 180px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 700;
+  gap: 10px;
+
+  &:hover {
+    background: #000;
+    color: white;
+    transition: 0.3s;
+  }
+}
+//
+//contact textarea
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__block {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+
+    &__textarea {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      width: 500px;
+      height: 650px;
+      border: 1px solid black;
+      border-radius: 20px;
+      padding: 20px;
+
+      &__input {
+        display: flex;
+        gap: 30px;
+      }
+
+      input {
+        text-align: left;
+        font-size: 1rem;
+        font-family: sans-serif;
+        width: 193px;
+        height: 40px;
+        outline: none;
+        border-radius: 1rem;
+        border: none;
+        padding: 10px;
+      }
+
+      textarea {
+        outline: none;
+        border-radius: 1rem;
+        padding: 10px;
+      }
+    }
+  }
+
+  button{
+    width: 150px;
+    height: 40px;
+    font-size: 1.4rem;
+    border-radius: 1.5rem;
+    border: none;
+
+
+    &:hover{
+      background-color: #f63;
+      transition: .3s ease-in-out;
+    }
+
+  }
+
+}
+//

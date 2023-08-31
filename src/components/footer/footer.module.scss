@@ -1,0 +1,43 @@
+.footer {
+  padding-top: 118px;
+  display: flex;
+  background: white;
+  justify-content: center;
+
+  &__2,
+  &__3,
+  &__4 {
+    width: 208px;
+  }
+  &__1{
+    margin-right: 170px;
+  }
+  &__heading {
+    margin-bottom: 28px;
+    color: #08546c;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &__text {
+    color: #757575;
+    font-size: 18px;
+    font-style: normal;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    &:hover{
+        color:#08546c;
+    }
+  }
+  &__text1 {
+    color: #757575;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    width: 344px;
+    line-height: 28px; /* 155.556% */
+  }
+}
