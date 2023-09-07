@@ -17,7 +17,6 @@ import styles from "../home/home.module.scss";
 
 function Portfolio() {
   return (
-    <>
       <div className="container">
 
         <section className={styles.intro}>
@@ -42,59 +41,24 @@ function Portfolio() {
           <h1>My Projects</h1>
           <div className={styles.projects__block}>
             <motion.div initial={{y:-500}} whileInView={{y:0}} transition={{duration:.1}}  className={styles.projects__block__box}>
-              <img src={TodoList} alt="" />
-              <article className={styles.GitName}>
-                <Link
-                  className={styles.projects__block__box_link}
-                  to={"https://phenomenal-pastelito-8a7bd1.netlify.app/"}
-                >
-                  Todo-List
-                </Link>
-              </article>
+              <Link  to={"https://phenomenal-pastelito-8a7bd1.netlify.app/"}><img src={TodoList} alt="" /></Link>
+              <article className={styles.GitName}>Todo-List</article>
             </motion.div>
             <motion.div initial={{y:500}} whileInView={{y:0}} transition={{duration:.2}} className={styles.projects__block__box}>
-              <img src={Burger} alt="" />
-              <article className={styles.GitName}>
-                <Link
-                  className={styles.projects__block__box_link}
-                  to={"https://mrsupremekun.github.io/burger/"}
-                >
-                  D-Burger
-                </Link>
-              </article>
+              <Link  to={"https://mrsupremekun.github.io/burger/"}><img src={Burger} alt="" /></Link>
+              <article className={styles.GitName}>D-burger</article>
             </motion.div>
             <motion.div initial={{y:-500}} whileInView={{y:0}} transition={{duration:.5}} className={styles.projects__block__box}>
-              <img src={Grayson} alt="" />
-              <article className={styles.GitName}>
-                <Link
-                  className={styles.projects__block__box_link}
-                  to={"mrsupremekun.github.io/grayson/"}
-                >
-                  Grayson
-                </Link>
-              </article>
+              <Link   to={"mrsupremekun.github.io/grayson/"}><img src={Grayson} alt="" /></Link>
+              <article className={styles.GitName}>Grayson</article>
             </motion.div>
             <motion.div initial={{y:500}} whileInView={{y:0}} transition={{duration:.7}} className={styles.projects__block__box}>
-              <img src={Nike} alt="" />
-              <article className={styles.GitName}>
-                <Link
-                  className={styles.projects__block__box_link}
-                  to={"https://mrsupremekun.github.io/nike/"}
-                >
-                  Nike
-                </Link>
-              </article>
+              <Link to={"https://mrsupremekun.github.io/nike/"} ><img src={Nike} alt="" /></Link>
+              <article className={styles.GitName}>Nike</article>
             </motion.div>
             <motion.div initial={{y:-500}} whileInView={{y:0}} transition={{duration:.9}} className={styles.projects__block__box}>
-              <img src={Eating} alt="" />
-              <article className={styles.GitName}>
-                <Link
-                  className={styles.projects__block__box_link}
-                  to={"https://mrsupremekun.github.io/eating/"}
-                >
-                  Eating
-                </Link>
-              </article>
+              <Link to={"https://mrsupremekun.github.io/eating/"} ><img src={Eating} alt="" /></Link>
+              <article className={styles.GitName}>Eating</article>
             </motion.div>
           </div>
         </section>
@@ -103,59 +67,24 @@ function Portfolio() {
           <h1>My Projects (Pt2)</h1>
           <div  className={styles.projects__block}>
             <motion.div initial={{x:-120}} whileInView={{x:0}}  className={styles.projects__block__box}>
-              <img src={Company} alt="" />
-              <article className={styles.GitName}>
-                <Link
-                  className={styles.projects__block__box_link}
-                  to={"https://mrsupremekun.github.io/supreme-arema/"}
-                >
-                  My Company
-                </Link>
-              </article>
+             <Link to={"https://mrsupremekun.github.io/supreme-arema/"}><img src={Company} alt="" /></Link> 
+              <article className={styles.GitName}>My Company </article>
             </motion.div>
             <motion.div initial={{y:-120}} whileInView={{y:0}} className={styles.projects__block__box}>
-              <img src={Titanic} alt="" />
-              <article className={styles.GitName}>
-                <Link
-                  className={styles.projects__block__box_link}
-                  to={"https://mrsupremekun.github.io/titanic/"}
-                >
-                  Titanic
-                </Link>
-              </article>
+              <Link to={"https://mrsupremekun.github.io/titanic/"}><img src={Titanic} alt="" /></Link>
+              <article className={styles.GitName}>Titanic</article>
             </motion.div>
             <div className={styles.projects__block__box}>
-              <img src={Apple} alt="" />
-              <article className={styles.GitName}>
-                <Link
-                  className={styles.projects__block__box_link}
-                  to={"https://mrsupremekun.github.io/apple/"}
-                >
-                  Apple
-                </Link>
-              </article>
+              <Link to={"https://mrsupremekun.github.io/apple/"} ><img src={Apple} alt="" /></Link>
+              <article className={styles.GitName}>Apple</article>
             </div>
             <motion.div initial={{y:120}} whileInView={{y:0}}  className={styles.projects__block__box}>
-              <img src={Movie} alt="" />
-              <article className={styles.GitName}>
-                <Link
-                  className={styles.projects__block__box_link}
-                  to={"https://deluxe-blini-868b0e.netlify.app"}
-                >
-                  Ciniphile
-                </Link>
-              </article>
+              <Link to={"https://deluxe-blini-868b0e.netlify.app"} ><img src={Movie} alt="" /></Link>
+              <article className={styles.GitName}>Ciniphile</article>
             </motion.div>
             <motion.div initial={{x:120}} whileInView={{x:0}} className={styles.projects__block__box}>
-              <img src={Parfume} alt="" />
-              <article className={styles.GitName}>
-                <Link
-                  className={styles.projects__block__box_link}
-                  to={"https://mrsupremekun.github.io/Parfume/"}
-                >
-                 Parfume
-                </Link>
-              </article>
+              <Link to={"https://mrsupremekun.github.io/Parfume/"} ><img src={Parfume} alt="" /></Link>
+              <article className={styles.GitName}>Parfume</article>
             </motion.div>
           </div>
         </section>
@@ -163,7 +92,6 @@ function Portfolio() {
         
 
       </div>
-    </>
   );
 }
 

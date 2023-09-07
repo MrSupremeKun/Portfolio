@@ -2,6 +2,9 @@ import React from "react";
 import {  motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaHeadphones, FaLaptopCode, FaArrowRight } from "react-icons/fa";
+import {MdOutlineDesignServices} from "react-icons/md"
+import {DiResponsive} from "react-icons/di"
+import {BsFillEyeFill} from "react-icons/bs" 
 import MyPicutre from "../../images/MyPicutre3.jpg";
 import Bg from "../../images/HeaderBg.jpg";
 import Section from "../../components/section";
@@ -9,8 +12,8 @@ import styles from "./home.module.scss";
 
 function Home() {
   return (
-    <div>
-      <div className="container">
+ 
+     <div className="container">
         <section className={styles.intro}>
           <div className={styles.intro__textarea}>
             <motion.h1
@@ -81,9 +84,12 @@ function Home() {
           My website is designed to be responsive and accessible on all devices, from desktop to mobile. Whether you're browsing from your laptop or your phone, you'll be able to easily access my portfolio and view my work."
           text2="
           I believe that less is more, and my portfolio website reflects that philosophy. I use a minimalist aesthetic in my design, which allows my work to take center stage and shine."
+          logo={<BsFillEyeFill/>}
+          logo1={<DiResponsive/>}
+          logo2={<MdOutlineDesignServices/>}
+        
         />
       </div>
-    </div>
   );
 }
 

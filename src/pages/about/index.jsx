@@ -1,7 +1,13 @@
 import React from "react";
 import {motion} from "framer-motion"
 import { TbWorldQuestion } from "react-icons/tb";
+import { AiFillHtml5 } from "react-icons/ai";
+import { BiLogoCss3 } from "react-icons/bi";
+import { IoLogoJavascript } from "react-icons/io";
 import { AiFillFileText } from "react-icons/ai";
+import { FaReact } from "react-icons/fa";
+import { BsBootstrapFill } from "react-icons/bs";
+import { PiFramerLogoFill } from "react-icons/pi";
 import AboutImg from "../../images/AboutImg.jpg";
 import AboutImg1 from "../../images/AboutImg1.jpg";
 import Section from "../../components/section"
@@ -10,7 +16,6 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div>
       <div className="container">
       <section className={styles.intro}>
           <div className={styles.intro__textarea}>
@@ -58,6 +63,9 @@ function About() {
         text="HTML stands for Hyper Text Markup Language . HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content."
         text1="CSS is the acronym of  “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML). This language contains coding elements and is composed of these “cascading style sheets” which are equally called CSS files (. css)."
         text2="JavaScript is a scripting language used to develop web pages . Developed in Netscape, JS allows developers to create a dynamic and interactive web page to interact with visitors and execute complex actions. It also enables users to load content into a document without reloading the entire page."
+        logo={<AiFillHtml5/>}
+        logo1={<BiLogoCss3/>}
+        logo2={<IoLogoJavascript/>}
         />
 
         <Section
@@ -68,10 +76,12 @@ function About() {
         text="The React. js framework is an open-source JavaScript framework and library developed by Facebook. It's used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.27"
         text1="What is Bootstrap? Bootstrap is a free, open source front-end development framework for the creation of websites and web apps. Designed to enable responsive development of mobile-first websites, Bootstrap provides a collection of syntax for template designs."
         text2="Framer Motion is a simple yet powerful motion library for React. It powers the amazing animations and interactions in Framer, the web builder for creative pros. Zero code, maximum speed."
+        logo={<FaReact/>}
+        logo1={<BsBootstrapFill/>}
+        logo2={<PiFramerLogoFill/>}
         />          
 
       </div>
-    </div>
   );
 }
 

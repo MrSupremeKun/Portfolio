@@ -8,7 +8,7 @@ import { BiLogoTelegram, BiLogoInstagram } from "react-icons/bi";
 
 function Contact() {
   return (
-    <>
+
       <div className="container">
         <section className={styles.intro}>
           <div className={styles.intro__textarea}>
@@ -51,7 +51,7 @@ function Contact() {
                 <input type="text" placeholder="Your Name" required />
                 <input type="text" placeholder="Your Email" required />
               </div>
-              <textarea placeholder="Massage" name="Massage Me" id="" cols="55" rows="10"></textarea>
+              <textarea placeholder="Massage" name="Massage Me" id="" cols="52" rows="10"></textarea>
               <button>Send</button>
             </div>
             <div className="img">
@@ -60,7 +60,7 @@ function Contact() {
           </div>
         </section>
       </div>
-    </>
+
   );
 }
 

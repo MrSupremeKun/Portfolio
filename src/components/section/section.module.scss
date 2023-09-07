@@ -3,6 +3,16 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
+    position: relative;
+
+    svg{
+      font-size: 100px;
+      width: 100%;
+      z-index: -10;
+      margin-top: 30%;
+      margin-left: auto;
+      margin-right: auto;
+    }
     
     &__section {
       width: 100%;
@@ -48,12 +58,12 @@
             transform: translateY(-30px);
             
             p{
-              opacity: 1;
+            opacity: 1;
             transform: scale(1);
-            transform: translateX(-3rem);
+            transform: translateY(-80%);
             transition: .1s;
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             }
 
           }
@@ -71,7 +81,6 @@
             border: 1px solid black;
             border-radius: 20px;
             padding: 15px;
-            margin-top: 3rem;
           }
         }
       }

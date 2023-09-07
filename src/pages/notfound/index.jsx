@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function NotFound() {
   return (
-    <div>
+
       <section className={styles.notFound}>
         <h1>404</h1>
         <div className={styles.notFound__textarea}>
@@ -12,7 +12,7 @@ function NotFound() {
         <Link to={"/"}>Go Back</Link>
          </div>
       </section>
-    </div>
+
   )
 }
 
